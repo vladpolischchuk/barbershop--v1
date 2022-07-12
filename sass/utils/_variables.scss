@@ -1,0 +1,22 @@
+// Шрифти
+    $main-font: 'Open Sans', sans-serif;
+    $secondary-font: 'Raleway', sans-serif;
+
+// Кольори та функція їх визову
+$colors: (
+    // Текст
+    'primary': #555555,
+    'secondary': #9DA4BD,
+    'title': #303030,
+    'secondary-light': rgba(157, 164, 189, 0.6),
+    'white': #FFFFFF,
+    'accent': #FF6C00,
+
+    // Фон
+    'main-bg-cl': #191C26,
+    'light-bg-cl': #F7F7F7,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}

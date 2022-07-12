@@ -1,0 +1,86 @@
+// Шапка сайту
+.page-header {
+   position: fixed;
+   top: 0;
+   z-index: 5;
+
+   width: 100%;
+
+   &.js-no-transparency {
+        background-color: rgba(16, 18, 27, 0.4);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 10px rgba(25, 28, 38, 0.4);
+    }
+}
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+}
+
+
+// Навігація по сайту
+.page-header__main-nav {
+    margin-left: 70px;
+}
+
+.main-nav__list {
+    display: flex;
+}
+
+.main-nav__item:nth-child(n+2) {
+    margin-left: 40px;
+}
+
+.main-nav__link {
+    display: block;
+    padding-top: 52px;
+    padding-bottom: 52px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+
+    color: getColor('white');
+
+    // ховер та фокус
+    &:hover,
+    &:focus {
+        color: getColor('accent');
+    }
+
+    // активна ссилка
+    &--active {
+        color: getColor('accent');
+    }
+}
+
+// Замовити стрижу
+.page-header__group {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header__phone {
+    display: block;
+    padding-top: 52px;
+    padding-bottom: 52px;
+
+    min-width: 160px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: getColor('white');
+
+    // ховер та фокус
+    &:hover,
+    &:focus {
+        color: getColor('accent');
+    }
+}
