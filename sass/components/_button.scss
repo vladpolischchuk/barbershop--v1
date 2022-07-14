@@ -5,8 +5,6 @@
     padding-top: 12px;
     padding-bottom: 12px;
 
-    width: 100%;
-
     font-family: inherit;
     font-weight: 600;
     font-size: 12px;
@@ -20,13 +18,23 @@
         border-radius: 25px;
         cursor: pointer;
 
+    transition: color $animation,
+                background-color $animation;
+
     // на темному фоні
-    &--mode-dark {
+    &--dark-mode {
         color: getColor('white');   
     }
 
     // на світлому фоні
-    &--mode-light {
-        color: getColor('title');   
+    &--light-mode {
+        color: getColor('title'); 
+    }
+
+    // ховер та фокус
+    &:hover,
+    &:focus {
+        background-color: getColor('accent');
+        color: getColor('white');
     }
 }

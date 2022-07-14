@@ -78,45 +78,6 @@
     display: flex;
 }
 
-// Соціальні мережі
-.hero__left-side {
-    display: flex;
-    align-items: flex-end;
-
-    width: 100px;
-}
-
-.social-links-list {
-    display: flex;
-    align-items: center;
-    margin-bottom: 60px;
-
-    transform: translateX(28px) rotate(-90deg);
-    transform-origin: left top;
-
-    // лінія
-    &::before {
-        content: '';
-        display: block;
-
-        width: 60px;
-        height: 1px;
-
-        background-color: getColor('title');
-    }
-}
-
-.social-links-list__link {
-    margin-left: 40px;
-
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.2em;
-
-    color: getColor('title');
-}
-
 // Оффер
 .hero__group{
     flex-grow: 1;
@@ -125,41 +86,6 @@
     padding-bottom: 206px;
 
     max-width: 500px;
-}
-
-.subtitle {
-    display: flex;
-    align-items: center;
-    margin-top: 0;
-    margin-bottom: 20px;
-
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-
-    // на темному фоні
-    &--light-mode {
-        color: getColor('secondary-light');
-    }
-
-    // на світлому фоні
-    &--dark-mode {
-        color: getColor('title');
-    }
-
-    // лінія
-    &::before {
-        content: "";
-        display: inline-block;
-        margin-right: 20px;
-       
-        width: 60px;
-        height: 1px;
-
-        background-color: currentColor;
-    }
 }
 
 .main-title {
@@ -174,20 +100,6 @@
     text-align: start;
 
     color: getColor('white');
-}
-
-.offer {
-    margin-top: 0;
-    margin-bottom: 0;
-
-    max-width: 400px;
-
-    font-size: 18px;
-    line-height: 1.66;
-    letter-spacing: 0.02em;
-    text-align: start;
-
-    color: getColor('secondary');
 }
 
 // Слайдер
@@ -245,6 +157,9 @@
     border-bottom: 1px solid getColor('secondary-light');
     cursor: pointer;
 
+    transition: color $animation,
+                border-color $animation;
+
     // вид кнопок
     &--prev {
         text-align: start;
@@ -256,8 +171,8 @@
     // ховер та фокус
     &:hover,
     &:focus {
-        color: getColor('white');
-        border-color: getColor('white');
+        color: getColor('accent');
+        border-color: getColor('accent');
     }
 
     // активна кнопка

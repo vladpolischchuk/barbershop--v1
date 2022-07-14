@@ -1,0 +1,8 @@
+// Розділ портфоліо
+.portfolio__uppertitle {
+    margin-bottom: 44px
+}
+
+.portfolio__item {
+    @include size-Cards(4);
+}

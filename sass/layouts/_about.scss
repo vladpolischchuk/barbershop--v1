@@ -1,0 +1,26 @@
+// Розділ про нас
+.about__container {
+    display: flex;
+}
+
+// Фото
+.photos__item {
+    @include sizeCards(2);
+}
+
+// Опис
+.about__description-group {
+    margin-left: 65px;
+
+    max-width: 475px;
+}
+
+.description-txt {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+}

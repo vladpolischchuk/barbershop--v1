@@ -1,0 +1,134 @@
+// Розділ контакти
+.contact {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1280px;
+    min-height: 644px;
+
+    background-color: getColor('main-bg-cl');
+
+    // фонові зображення
+    @media screen and (max-width: 576px) {
+        background-image:
+            url(../../img/contact/mobile/bg.png);
+    }
+
+    @media screen and (min-width: 577px) and (max-width: 960px) {
+        background-image:
+            url(../../img/contact/tablet/bg.png);
+    }
+
+    @media screen and (min-width: 961px) {
+        background-image:
+            url(../../img/contact/pc/bg.png);
+    }
+
+    background-size: 625px 644px, cover;
+    background-repeat: no-repeat;
+    background-position: top right, center;  
+}
+
+// Фонове зображення для retina-екранів
+@media screen and (max-width: 576px) {
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .contact {
+            background-image:
+                url(../../img/contact/mobile/bg-2x.png);
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 960px) {
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .contact {
+            background-image:
+                url(../../img/contact/tablet/bg-2x.png);
+        }
+    }
+}
+
+@media screen and (min-width: 961px) {
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .contact {
+            background-image:
+                url(../../img/contact/pc/bg-2x.png);
+        }
+    }
+}
+
+.contact__container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+// Форма запису на послугу
+.contac__left-side {
+    flex-basis: 50%;
+}
+
+
+// Контакти сайту
+.contact__right-side {
+    flex-basis: 470px;
+}
+
+.contact__title {
+    margin-bottom: 40px;
+}
+
+.contact__links {
+    margin-bottom: 70px;
+}
+
+.contact__item {
+    // відступи
+    &:nth-child(n+2) {
+        margin-top: 20px;
+    }
+}
+
+.contact__link {
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    text-decoration: none;
+}
+
+.contact__link,
+.contact__time {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+
+    color: getColor('secondary');
+}
+
+.contact__link:hover,
+.contact__link:focus {
+    color: getColor('accent');
+}
+
+.contact__icon {
+    margin-right: 16px;
+
+    width: 24px;
+    height: 24px;
+
+   fill: currentColor;
+}
+
+.contact__uppertitle {
+    color: getColor('white');
+}

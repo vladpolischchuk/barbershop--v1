@@ -31,7 +31,7 @@
             <!-- Логотип -->
             <a href="./index.html" aria-label="Логотип сайту BarberShop">
                 <svg width="69" height="56">
-                    <use href="./img/sprits/logo.svg"></use>
+                    <use class="logo " href="./img/sprits/sprit.svg#icon-logo" data-logo></use>
                 </svg>
                 <!-- <img src="./img/header/logo-dark.jpg" alt="Логотип - BarberShop" > -->
             </a>
@@ -41,27 +41,27 @@
                 <ul class="main-nav__list list">
 
                     <li class="main-nav__item">
-                        <a class="main-nav__link link" href="">О нас</a>
+                        <a class="main-nav__link link" href="#about">О нас</a>
                     </li>
 
                     <li class="main-nav__item">
-                        <a class="main-nav__link link" href="">Услуги и цены</a>
+                        <a class="main-nav__link link" href="#price">Услуги и цены</a>
                     </li>
 
                     <li class="main-nav__item">
-                        <a class="main-nav__link link" href="">Мастера</a>
+                        <a class="main-nav__link link" href="#team">Мастера</a>
                     </li>
 
                     <li class="main-nav__item">
-                        <a class="main-nav__link link" href="">Контакты</a>
+                        <a class="main-nav__link link" href="#contact">Контакты</a>
                     </li>
                 </ul>
             </nav>
 
             <!-- Замовити стрижку -->
             <div class="page-header__group">
-                <a class="header__phone link" href="tel:+380441111111">+38 044 111 11 11</a>
-                <button class="btn btn--mode-dark" type="button">онлайн-запись</button>
+                <a class="phone-link link" href="tel:+380441111111">+38 044 111 11 11</a>
+                <button class="btn btn--dark-mode" type="button">онлайн-запись</button>
             </div>
         </div>
     </header>
@@ -76,7 +76,7 @@
                 <!-- Соціальні мережі -->
                 <div class="hero__left-side">
 
-                    <ul class="social-links-list list">
+                    <ul class="social-links-list hero__social-links-list list">
 
                         <li>
                             <a class="social-links-list__link link" href="https://www.instagram.com/" target="_blank"
@@ -92,9 +92,11 @@
 
                 <!-- Оффер -->
                 <div class="hero__group">
-                    <p class="subtitle subtitle--light-mode" lang="en">A hair salon for men in Kyiv</p>
+                    <p class="uppertitle uppertitle--dark-mode" lang="en">A hair salon for men in Kyiv</p>
+
                     <h1 class="main-title" lang="en">BarberShop</h1>
-                    <p class="offer">
+
+                    <p class="subtitle subtitle--dark-mode">
                         Мы эксперты в модных мужских стрижках.
                         Работаем быстро, осторожно и со вкусом.
                     </p>
@@ -108,6 +110,7 @@
                         <li class="slider__item"></li>
                     </ul>
 
+                    <!-- Кнопки перемикання слайдів -->
                     <ul class="slider__controls list">
                         <li class="slider__item-control">
                             <button class="slider__btn slider__btn--prev " type="button">Назад</button>
@@ -123,194 +126,698 @@
 
         </section>
 
-        <!-- Розділ "О нас" -->
-        <section>
+        <!-- Розділ про нас -->
+        <section class="section about" id="about">
+            <div class="container about__container">
 
-            <ul>
-                <li><img src="./img/about/tablet/img1.jpg" alt="Бритье бороды" width="270" height="445"></li>
-                <li><img src="./img/about/tablet/img2.jpg" alt="Бритье опасной бритвой" width="270" height="445"></li>
-            </ul>
+                <!-- Фотографії -->
+                <ul class="photos grid list">
+                    <li class="photos__item grid__item">
+                        <picture>
+                            <!-- розширення webp -->
+                            <source srcset="
+                                        ./img/about/pc/WebP/img1.webp 270w,
+                                        ./img/about/pc/WebP/img1-2x.webp 540w" sizes="(min-width: 1200px) 270px"
+                                type="image/webp" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/about/tablet/WebP/img1.webp 330w,
+                                        ./img/about/tablet/WebP/img1-2x.webp 660w" sizes="(min-width: 768px) 330px"
+                                type="image/webp" media="(min-width: 768px)" />
 
-            <div>
-                <p>О НАС</p>
-                <h2>Лучший Барбершоп
-                    твоего города</h2>
-                <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-                <p>Мы команда, которая никогда не останавливается на достигнутом
-                    и жаждет перемен. И когда ты попадешь в руки нашего мастера,
-                    то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
-                    Поэтому, мы всегда
-                    готовы усовершенствовать каждого, кто к нам приходит!
-                </p>
-                <button type="button">онлайн-запись</button>
+                            <!-- розширення jpeg -->
+                            <source srcset="
+                                        ./img/about/pc/img1.jpg 270w, 
+                                        ./img/about/pc/img1-2x.jpg 540w" sizes="(min-width: 1200px) 270px"
+                                type="image/jpeg" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/about/tablet/img1.jpg 330w,
+                                        ./img/about/tablet/img1-2x.jpg 660w" sizes="(min-width: 768px) 330px"
+                                type="image/jpeg" media="(min-width: 768px)" />
+
+                            <img class="img" src="./img/about/tablet/img1.jpg" alt="Бритье бороды" />
+                        </picture>
+
+                    </li>
+
+                    <li class="photos__item grid__item">
+                        <picture>
+                            <!-- розширення webp -->
+                            <source srcset="
+                                        ./img/about/pc/WebP/img2.webp 270w,
+                                        ./img/about/pc/WebP/img2-2x.webp 540w" sizes="(min-width: 1200px) 270px"
+                                type="image/webp" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/about/tablet/WebP/img2.webp 330w,
+                                        ./img/about/tablet/WebP/img2-2x.webp 660w" sizes="(min-width: 768px) 330px"
+                                type="image/webp" media="(min-width: 768px)" />
+
+                            <!-- розширення jpeg -->
+                            <source srcset="
+                                        ./img/about/pc/img2.jpg 270w, 
+                                        ./img/about/pc/img2-2x.jpg 540w" sizes="(min-width: 1200px) 270px"
+                                type="image/jpeg" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/about/tablet/img2.jpg 330w,
+                                        ./img/about/tablet/img2-2x.jpg 660w" sizes="(min-width: 768px) 330px"
+                                type="image/jpeg" media="(min-width: 768px)" />
+
+                            <img class="img" src="./img/about/tablet/img2.jpg" alt="Бритье опасной бритвой" />
+                        </picture>
+
+                    </li>
+                </ul>
+
+                <!-- Опис -->
+                <div class="about__description-group">
+                    <p class="uppertitle uppertitle--light-mode">О НАС</p>
+
+                    <!-- Заголовок розділів -->
+                    <h2 class="title title--light-mode">Лучший Барбершоп
+                        твоего города</h2>
+                    <p class="subtitle">
+                        Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
+                    </p>
+                    <p class="description-txt">
+                        Мы команда, которая никогда не останавливается на достигнутом
+                        и жаждет перемен. И когда ты попадешь в руки нашего мастера,
+                        то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
+                        Поэтому, мы всегда
+                        готовы усовершенствовать каждого, кто к нам приходит!
+                    </p>
+                    <button class="btn btn--light-mode" type="button">онлайн-запись</button>
+                </div>
             </div>
         </section>
 
-        <!-- Розділ "Услуги и цены" -->
-        <section>
+        <!-- Розділ послуги т ціни -->
+        <section class="section price" id="price">
+            <div class="container">
+                <p class="uppertitle uppertitle--dark-mode">Проведи время в компании лучших мастеров</p>
 
-            <p>Проведи время в компании лучших мастеров</p>
-            <h2>Услуги и цены</h2>
-            <ul>
-                <li>
-                    <ul>
-                        <li>Мужская стрижка от 300 грн.</li>
-                        <li>Стрижка бороды от 200 грн.</li>
-                        <li>Стрижка усов от 200 грн.</li>
-                        <li>Бритье опасной бритвой от 200 грн.</li>
-                    </ul>
-                <li>
-                    <ul>
-                        <li>Cтрижка у стажера от 50 грн.</li>
-                        <li>Стрижка под насадку от 200 грн.</li>
-                        <li>Детская стрижка (до 12 лет) от 300 грн.</li>
-                        <li>Камуфлирование седины от 200 грн.</li>
-                    </ul>
-                </li>
-            </ul>
-            <button type="button">онлайн-запись</button>
-        </section>
+                <!-- Заголовок розділів -->
+                <h2 class="title title--dark-mode">Услуги и цены</h2>
 
-        <!-- Розділ "Преимущества" -->
-        <section>
+                <!-- Таблиці цін -->
+                <ul class="price-list list">
 
-            <ul>
-                <li>
-                    <p>600</p>
-                    <sup>&#43;</sup>
-                    <p>Довольных клиентов в день</p>
-                </li>
-                <li>
-                    <p>50</p>
-                    <sup>&#43;</sup>
-                    <p>Наград за отличный сервис</p>
-                </li>
-                <li>
-                    <p>20</p>
-                    <sup>&#43;</sup>
-                    <p>Лучших мастеров Киева</p>
-                </li>
-                <li>
-                    <p>100</p>
-                    <sup>&#43;</sup>
-                    <p>Подарков постоянным клиентам</p>
-                </li>
-            </ul>
+                    <li class="price-list__item">
 
-            <div>
-                <p>старая традиционная школа</p>
-                <h2>Почему приходят именно к нам?</h2>
-                <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
+                        <!-- Блок цін -->
+                        <ul class="price-inner list">
+                            <li class="price-inner__item">
+                                <span class="price-inner__desc">Мужская стрижка</span>
+                                <span>от 300 грн.</span>
+                            </li>
+                            <li class="price-inner__item">
+                                <span class="price-inner__desc">Стрижка бороды</span>
+                                <span>от 200 грн.</span>
+                            </li>
+                            <li class="price-inner__item">
+                                <span class="price-inner__desc">Стрижка усов </span>
+                                <span>от 200 грн.</span>
+                            </li>
+                            <li class="price-inner__item">
+                                <span class="price-inner__desc">Бритье опасной бритвой</span>
+                                <span>от 200 грн.</span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="price-list__item">
+
+                        <!-- Блок цін -->
+                        <ul class="price-inner list">
+                            <li class="price-inner__item">
+                                <span class="price-inner__desc">Cтрижка у стажера</span>
+                                <span>от 50 грн</span> .
+                            </li>
+                            <li class="price-inner__item">
+                                <span class="price-inner__desc">Стрижка под насадку</span>
+                                <span>от 200 грн.</span>
+                            </li>
+                            <li class="price-inner__item">
+                                <span class="price-inner__desc">Детская стрижка (до 12 лет)</span>
+                                <span>от 300 грн.</span>
+                            </li>
+                            <li class="price-inner__item">
+                                <span class="price-inner__desc">Камуфлирование седины</span>
+                                <span>от 200 грн.</span>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <!-- Кнопка -->
+                <div class="price__wrapper">
+                    <button class="btn btn--dark-mode" type="button">онлайн-запись</button>
+                </div>
             </div>
         </section>
 
-        <!-- Розділ "Наши мастера" -->
-        <section>
+        <!-- Розділ переваги -->
+        <section class="section benefits">
+            <div class="container benefits__container">
 
-            <p>для настоящих ценителей атмосферы</p>
-            <h2>Наши мастера</h2>
-
-            <ul>
-                <li>
-                    <img src="./images/team/img1.jpg" alt="John Smith - Extreme Barber">
-                    <h3 lang="en">John Smith</h3>
-                    <p lang="en">Extreme Barber</p>
-
-                    <ul>
-                        <li><a href="#">instagram</a></li>
-                        <li><a href="#">twitter</a></li>
-                        <li><a href="#">facebook</a></li>
-                        <li><a href="#">linkedin</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <img src="./images/team/img2.jpg" alt="Michele Doe">
-                    <h3 lang="en">Michele Doe</h3>
-                    <p lang="en">Extreme Barber</p>
-
-                    <ul>
-                        <li><a href="#">instagram</a></li>
-                        <li><a href="#">twitter</a></li>
-                        <li><a href="#">facebook</a></li>
-                        <li><a href="#">linkedin</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <img src="./images/team/img3.jpg" alt="Alan Black">
-                    <h3 lang="en">Alan Black</h3>
-                    <p lang="en">Extreme Barber</p>
-
-                    <ul>
-                        <li><a href="#">instagram</a></li>
-                        <li><a href="#">twitter</a></li>
-                        <li><a href="#">facebook</a></li>
-                        <li><a href="#">linkedin</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Розділ "Портфолио" -->
-        <section>
-
-            <p>На латинском языке “барба” означает “борода”</p>
-            <h2 hidden>Примеры работ</h2>
-            <ul>
-                <li><img src="./images/portfolio/img1.jpg" alt="Пример работы 1"></li>
-                <li><img src="./images/portfolio/img2.jpg" alt="Пример работы 2"></li>
-                <li><img src="./images/portfolio/img3.jpg" alt="Пример работы 3"></li>
-                <li><img src="./images/portfolio/img4.jpg" alt="Пример работы 4"></li>
-            </ul>
-        </section>
-
-        <!-- Розділ "Контакты" -->
-        <section>
-
-            <!-- Форма -->
-            <div>
-                <h2>Онлайн-запись</h2>
-                <form>
-                    <button type="button"></button>
-                </form>
-            </div>
-
-            <!-- Контакты -->
-            <div>
-                <h2>Контакты</h2>
-                <address>
-                    <ul>
-                        <li><a href="https://goo.gl/maps/S13B71cPM89bUmLEA" rel="noopener noreferrer">ул. Васильковая,
-                                7А Киев, 08132
-                            </a>
+                <!-- Ліва частина -->
+                <div class="benefits__left-side">
+                    <ul class="benefits__list list">
+                        <li class="benefits__item">
+                            <p class="benefits__amount">
+                                600
+                                <sup class="benefits__decor">&#43;</sup>
+                            </p>
+                            <p class="benefits__desc">Довольных клиентов в день</p>
                         </li>
-                        <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-                        <li><a href="mailto:barbershop@email.com">barbershop@email.com</a></li>
-                    </ul>
-                </address>
 
-                <h3>время работы</h3>
-                <p>Ежедневно с
-                    <time datetime="09:00">9:00</time>
-                    до
-                    <time datetime="22:00">22:00</time>
-                </p>
+                        <li class="benefits__item">
+                            <p class="benefits__amount">
+                                50
+                                <sup class="benefits__decor">&#43;</sup>
+                            </p>
+                            <p class="benefits__desc">Наград за отличный сервис</p>
+                        </li>
+
+                        <li class="benefits__item">
+                            <p class="benefits__amount">
+                                20
+                                <sup class="benefits__decor">&#43;</sup>
+                            </p>
+                            <p class="benefits__desc">Лучших мастеров Киева</p>
+                        </li>
+
+                        <li class="benefits__item">
+                            <p class="benefits__amount">
+                                100
+                                <sup class="benefits__decor">&#43;</sup>
+                            </p>
+                            <p class="benefits__desc">Подарков постоянным клиентам</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Права чатстина -->
+                <div class="benefits__right-side">
+                    <p class="uppertitle uppertitle--light-mode">старая традиционная школа</p>
+
+                    <!-- Заголовок розділів -->
+                    <h2 class="title title--light-mode">Почему приходят именно к нам?</h2>
+                    <p class="subtitle">
+                        О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать,
+                        чем 10 раз прочитать.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Розділ команда -->
+        <section class="section team" id="team">
+
+            <div class="container">
+                <p class="uppertitle uppertitle--light-mode">для настоящих ценителей атмосферы</p>
+
+                <!-- Заголовок розділів -->
+                <h2 class="title team__title title--light-mode">Наши мастера</h2>
+
+                <!-- Список нашої команди -->
+                <ul class="grid team__list list">
+
+                    <li class="grid__item team__item">
+
+                        <!-- Фото -->
+                        <picture>
+                            <!-- розширення webp -->
+                            <source srcset="
+                                        ./img/team/pc/WebP/img1.webp 370w,
+                                        ./img/team/pc/WebP/img1-2x.webp 740w" sizes="(min-width: 1200px) 33vw"
+                                type="image/webp" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/team/tablet/WebP/img1.webp 450w,
+                                        ./img/team/tablet/WebP/img1-2x.webp 900w" sizes="(min-width: 768px) 50vw"
+                                type="image/webp" media="(min-width: 768px)" />
+                            <source srcset="
+                                        ./img/team/mobile/WebP/img1.webp 418w,
+                                        ./img/team/mobile/WebP/img1-2x.webp 836w" sizes="100vw" type="image/webp"
+                                media="(max-width: 767px)" />
+
+                            <!-- розширення jpeg -->
+                            <source srcset="
+                                        ./img/team/pc/img1.jpg 370w,
+                                        ./img/team/pc/img1-2x.jpg 740w" sizes="(min-width: 1200px) 33vw"
+                                type="image/jpeg" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/team/tablet/img1.jpg 450w,
+                                        ./img/team/tablet/img1-2x.jpg 900w" sizes="(min-width: 768px) 50vw"
+                                type="image/jpeg" media="(min-width: 768px)" />
+                            <source srcset="
+                                        ./img/team/mobile/img1.jpg 418w,
+                                        ./img/team/mobile/img1-2x.jpg 836w" sizes="100vw" type="image/jpeg"
+                                media="(max-width: 767px)" />
+
+                            <img class="img" src="./img/team/mobile/img1.jpg" alt="John Smith - Extreme Barber" />
+                        </picture>
+
+                        <!-- Опис члена команди -->
+                        <div class="team__article">
+                            <h3 class="team__subtitle" lang="en">John Smith</h3>
+                            <p class="team__desc" lang="en">Extreme Barber</p>
+                        </div>
+
+                        <!-- Соціальні мережі члена команди -->
+                        <ul class="social list">
+
+                            <li class="social__item">
+                                <a class="social__link link" href="#">
+                                    <svg class="social__icon">
+                                        <use href="./img/sprits/sprit.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="social__item">
+                                <a class="social__link link" href="#">
+                                    <svg class="social__icon">
+                                        <use href="./img/sprits/sprit.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="social__item">
+                                <a class="social__link link" href="#">
+                                    <svg class="social__icon">
+                                        <use href="./img/sprits/sprit.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="social__item">
+                                <a class="social__link link" href="#">
+                                    <svg class="social__icon">
+                                        <use href="./img/sprits/sprit.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="grid__item team__item">
+
+                        <!-- Фото -->
+                        <picture>
+                            <!-- розширення webp -->
+                            <source srcset="
+                                        ./img/team/pc/WebP/img2.webp 370w,
+                                        ./img/team/pc/WebP/img2-2x.webp 740w" sizes="(min-width: 1200px) 33vw"
+                                type="image/webp" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/team/tablet/WebP/img2.webp 450w,
+                                        ./img/team/tablet/WebP/img2-2x.webp 900w" sizes="(min-width: 768px) 50vw"
+                                type="image/webp" media="(min-width: 768px)" />
+                            <source srcset="
+                                        ./img/team/mobile/WebP/img2.webp 418w,
+                                        ./img/team/mobile/WebP/img2-2x.webp 836w" sizes="100vw" type="image/webp"
+                                media="(max-width: 767px)" />
+
+                            <!-- розширення jpeg -->
+                            <source srcset="
+                                        ./img/team/pc/img2.jpg 370w,
+                                        ./img/team/pc/img2-2x.jpg 740w" sizes="(min-width: 1200px) 33vw"
+                                type="image/jpeg" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/team/tablet/img2.jpg 450w,
+                                        ./img/team/tablet/img2-2x.jpg 900w" sizes="(min-width: 768px) 50vw"
+                                type="image/jpeg" media="(min-width: 768px)" />
+                            <source srcset="
+                                        ./img/team/mobile/img2.jpg 418w,
+                                        ./img/team/mobile/img2-2x.jpg 836w" sizes="100vw" type="image/jpeg"
+                                media="(max-width: 767px)" />
+
+                            <img class="img" src="./img/team/mobile/img2.jpg" alt="Michele Doe - Extreme Barber" />
+                        </picture>
+
+                        <!-- Опис члена команди -->
+                        <div class="team__article">
+                            <h3 class="team__subtitle" lang="en">Michele Doe</h3>
+                            <p class="team__desc" lang="en">Extreme Barber</p>
+                        </div>
+
+                        <!-- Соціальні мережі члена команди -->
+                        <ul class="social list">
+
+                            <li class="social__item">
+                                <a class="social__link link" href="#">
+                                    <svg class="social__icon">
+                                        <use href="./img/sprits/sprit.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="social__item">
+                                <a class="social__link link" href="#">
+                                    <svg class="social__icon">
+                                        <use href="./img/sprits/sprit.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="social__item">
+                                <a class="social__link link" href="#">
+                                    <svg class="social__icon">
+                                        <use href="./img/sprits/sprit.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="social__item">
+                                <a class="social__link link" href="#">
+                                    <svg class="social__icon">
+                                        <use href="./img/sprits/sprit.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="grid__item team__item">
+
+                        <!-- Фото -->
+                        <picture>
+                            <!-- розширення webp -->
+                            <source srcset="
+                                        ./img/team/pc/WebP/img3.webp 370w,
+                                        ./img/team/pc/WebP/img3-2x.webp 740w" sizes="(min-width: 1200px) 33vw"
+                                type="image/webp" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/team/tablet/WebP/img3.webp 450w,
+                                        ./img/team/tablet/WebP/img3-2x.webp 900w" sizes="(min-width: 768px) 50vw"
+                                type="image/webp" media="(min-width: 768px)" />
+                            <source srcset="
+                                        ./img/team/mobile/WebP/img3.webp 418w,
+                                        ./img/team/mobile/WebP/img3-2x.webp 836w" sizes="100vw" type="image/webp"
+                                media="(max-width: 767px)" />
+
+                            <!-- розширення jpeg -->
+                            <source srcset="
+                                        ./img/team/pc/img3.jpg 370w,
+                                        ./img/team/pc/img3-2x.jpg 740w" sizes="(min-width: 1200px) 33vw"
+                                type="image/jpeg" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/team/tablet/img3.jpg 450w,
+                                        ./img/team/tablet/img3-2x.jpg 900w" sizes="(min-width: 768px) 50vw"
+                                type="image/jpeg" media="(min-width: 768px)" />
+                            <source srcset="
+                                        ./img/team/mobile/img3.jpg 418w,
+                                        ./img/team/mobile/img3-2x.jpg 836w" sizes="100vw" type="image/jpeg"
+                                media="(max-width: 767px)" />
+
+                            <img class="img" src="./img/team/mobile/img2.jpg" alt="Alan Black - Extreme Barber" />
+                        </picture>
+
+                        <!-- Опис члена команди -->
+                        <div class="team__article">
+                            <h3 class="team__subtitle" lang="en">Alan Black</h3>
+                            <p class="team__desc" lang="en">Extreme Barber</p>
+                        </div>
+
+                        <!-- Соціальні мережі члена команди -->
+                        <ul class="social list">
+
+                            <li class="social__item">
+                                <a class="social__link link" href="#">
+                                    <svg class="social__icon">
+                                        <use href="./img/sprits/sprit.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="social__item">
+                                <a class="social__link link" href="#">
+                                    <svg class="social__icon">
+                                        <use href="./img/sprits/sprit.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="social__item">
+                                <a class="social__link link" href="#">
+                                    <svg class="social__icon">
+                                        <use href="./img/sprits/sprit.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="social__item">
+                                <a class="social__link link" href="#">
+                                    <svg class="social__icon">
+                                        <use href="./img/sprits/sprit.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <!-- Розділ портфоліо -->
+        <section class="section portfolio">
+
+            <div class="container">
+                <p class="uppertitle uppertitle--light-mode portfolio__uppertitle">На латинском языке “барба” означает
+                    “борода”</p>
+
+                <!-- Заголовок розділів -->
+                <h2 hidden>Примеры работ</h2>
+
+                <!-- Список робіт -->
+                <ul class="grid list">
+                    <li class="grid__item portfolio__item">
+
+                        <!-- Фото -->
+                        <picture>
+                            <!-- розширення webp -->
+                            <source srcset="
+                                        ./img/portfolio/pc/WebP/img1.webp 370w,
+                                        ./img/portfolio/pc/WebP/img1-2x.webp 740w" sizes="(min-width: 1200px) 33vw"
+                                type="image/webp" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/portfolio/tablet/WebP/img1.webp 450w,
+                                        ./img/portfolio/tablet/WebP/img1-2x.webp 900w" sizes="(min-width: 768px) 50vw"
+                                type="image/webp" media="(min-width: 768px)" />
+                            <source srcset="
+                                        ./img/portfolio/mobile/WebP/img1.webp 418w,
+                                        ./img/portfolio/mobile/WebP/img1-2x.webp 836w" sizes="100vw" type="image/webp"
+                                media="(max-width: 767px)" />
+
+                            <!-- розширення jpeg -->
+                            <source srcset="
+                                        ./img/portfolio/pc/img1.jpg 370w,
+                                        ./img/portfolio/pc/img1-2x.jpg 740w" sizes="(min-width: 1200px) 33vw"
+                                type="image/jpeg" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/portfolio/tablet/img1.jpg 450w,
+                                        ./img/portfolio/tablet/img1-2x.jpg 900w" sizes="(min-width: 768px) 50vw"
+                                type="image/jpeg" media="(min-width: 768px)" />
+                            <source srcset="
+                                        ./img/portfolio/mobile/img1.jpg 418w,
+                                        ./img/portfolio/mobile/img1-2x.jpg 836w" sizes="100vw" type="image/jpeg"
+                                media="(max-width: 767px)" />
+
+                            <img class="img" src="./img/team/mobile/img1.jpg" alt="Пример работы 1" />
+                        </picture>
+                    </li>
+
+                    <li class="grid__item portfolio__item">
+
+                        <!-- Фото -->
+                        <picture>
+                            <!-- розширення webp -->
+                            <source srcset="
+                                        ./img/portfolio/pc/WebP/img2.webp 370w,
+                                        ./img/portfolio/pc/WebP/img2-2x.webp 740w" sizes="(min-width: 1200px) 33vw"
+                                type="image/webp" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/portfolio/tablet/WebP/img2.webp 450w,
+                                        ./img/portfolio/tablet/WebP/img2-2x.webp 900w" sizes="(min-width: 768px) 50vw"
+                                type="image/webp" media="(min-width: 768px)" />
+                            <source srcset="
+                                        ./img/portfolio/mobile/WebP/img2.webp 418w,
+                                        ./img/portfolio/mobile/WebP/img2-2x.webp 836w" sizes="100vw" type="image/webp"
+                                media="(max-width: 767px)" />
+
+                            <!-- розширення jpeg -->
+                            <source srcset="
+                                        ./img/portfolio/pc/img2.jpg 370w,
+                                        ./img/portfolio/pc/img2-2x.jpg 740w" sizes="(min-width: 1200px) 33vw"
+                                type="image/jpeg" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/portfolio/tablet/img2.jpg 450w,
+                                        ./img/portfolio/tablet/img2-2x.jpg 900w" sizes="(min-width: 768px) 50vw"
+                                type="image/jpeg" media="(min-width: 768px)" />
+                            <source srcset="
+                                        ./img/portfolio/mobile/img2.jpg 418w,
+                                        ./img/portfolio/mobile/img2-2x.jpg 836w" sizes="100vw" type="image/jpeg"
+                                media="(max-width: 767px)" />
+
+                            <img class="img" src="./img/team/mobile/img2.jpg" alt="Пример работы 2" />
+                        </picture>
+                    </li>
+
+                    <li class="grid__item portfolio__item">
+
+                        <!-- Фото -->
+                        <picture>
+                            <!-- розширення webp -->
+                            <source srcset="
+                                        ./img/portfolio/pc/WebP/img3.webp 370w,
+                                        ./img/portfolio/pc/WebP/img3-2x.webp 740w" sizes="(min-width: 1200px) 33vw"
+                                type="image/webp" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/portfolio/tablet/WebP/img3.webp 450w,
+                                        ./img/portfolio/tablet/WebP/img3-2x.webp 900w" sizes="(min-width: 768px) 50vw"
+                                type="image/webp" media="(min-width: 768px)" />
+                            <source srcset="
+                                        ./img/portfolio/mobile/WebP/img3.webp 418w,
+                                        ./img/portfolio/mobile/WebP/img3-2x.webp 836w" sizes="100vw" type="image/webp"
+                                media="(max-width: 767px)" />
+
+                            <!-- розширення jpeg -->
+                            <source srcset="
+                                        ./img/portfolio/pc/img3.jpg 370w,
+                                        ./img/portfolio/pc/img3-2x.jpg 740w" sizes="(min-width: 1200px) 33vw"
+                                type="image/jpeg" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/portfolio/tablet/img3.jpg 450w,
+                                        ./img/portfolio/tablet/img3-2x.jpg 900w" sizes="(min-width: 768px) 50vw"
+                                type="image/jpeg" media="(min-width: 768px)" />
+                            <source srcset="
+                                        ./img/portfolio/mobile/img3.jpg 418w,
+                                        ./img/portfolio/mobile/img3-2x.jpg 836w" sizes="100vw" type="image/jpeg"
+                                media="(max-width: 767px)" />
+
+                            <img class="img" src="./img/team/mobile/img3.jpg" alt="Пример работы 3" />
+                        </picture>
+                    </li>
+
+                    <li class="grid__item portfolio__item">
+
+                        <!-- Фото -->
+                        <picture>
+                            <!-- розширення webp -->
+                            <source srcset="
+                                        ./img/portfolio/pc/WebP/img4.webp 370w,
+                                        ./img/portfolio/pc/WebP/img4-2x.webp 740w" sizes="(min-width: 1200px) 33vw"
+                                type="image/webp" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/portfolio/tablet/WebP/img4.webp 450w,
+                                        ./img/portfolio/tablet/WebP/img4-2x.webp 900w" sizes="(min-width: 768px) 50vw"
+                                type="image/webp" media="(min-width: 768px)" />
+                            <source srcset="
+                                        ./img/portfolio/mobile/WebP/img4.webp 418w,
+                                        ./img/portfolio/mobile/WebP/img4-2x.webp 836w" sizes="100vw" type="image/webp"
+                                media="(max-width: 767px)" />
+
+                            <!-- розширення jpeg -->
+                            <source srcset="
+                                        ./img/portfolio/pc/img4.jpg 370w,
+                                        ./img/portfolio/pc/img4-2x.jpg 740w" sizes="(min-width: 1200px) 33vw"
+                                type="image/jpeg" media="(min-width: 1200px)" />
+                            <source srcset="
+                                        ./img/portfolio/tablet/img4.jpg 450w,
+                                        ./img/portfolio/tablet/img4-2x.jpg 900w" sizes="(min-width: 768px) 50vw"
+                                type="image/jpeg" media="(min-width: 768px)" />
+                            <source srcset="
+                                        ./img/portfolio/mobile/img4.jpg 418w,
+                                        ./img/portfolio/mobile/img4-2x.jpg 836w" sizes="100vw" type="image/jpeg"
+                                media="(max-width: 767px)" />
+
+                            <img class="img" src="./img/team/mobile/img4.jpg" alt="Пример работы 4" />
+                        </picture>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <!-- Розділ контакти -->
+        <section class="section contact" id="contact">
+
+            <div class="container contact__container">
+                <!-- Форма запису на послугу -->
+                <div class="contact__left-side">
+                    <h2 class="title contact__title">Онлайн-запись</h2>
+                    <form>
+                        <button type="button"></button>
+                    </form>
+                </div>
+
+                <!-- Контакти сайту -->
+                <div class="contact__right-side">
+                    <h2 class="title contact__title title--dark-mode">Контакты</h2>
+                    <address class="contact__links">
+                        <ul class="list">
+                            <li class="contact__item">
+                                <a class="contact__link" href="https://goo.gl/maps/S13B71cPM89bUmLEA"
+                                    rel="noopener noreferrer">
+                                    <svg class="contact__icon">
+                                        <use href="./img/sprits/sprit.svg#icon-map"></use>
+                                    </svg>
+                                    ул. Васильковая,
+                                    7А <br> Киев, 08132
+                                </a>
+                            </li>
+                            <li class="contact__item">
+                                <a class="contact__link" href="tel:+380441111111">
+                                    <svg class="contact__icon">
+                                        <use href="./img/sprits/sprit.svg#icon-phone"></use>
+                                    </svg>
+                                    +38 044 111 11 11
+                                </a>
+                            </li>
+                            <li class="contact__item">
+                                <a class="contact__link" href="mailto:barbershop@email.com">
+                                    <svg class="contact__icon">
+                                        <use href="./img/sprits/sprit.svg#icon-mail"></use>
+                                    </svg>
+                                    barbershop@email.com
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+
+                    <h3 class="uppertitle uppertitle--dark-mode"><span class="contact__uppertitle">время работы</span>
+                    </h3>
+                    <p class="contact__time">Ежедневно с
+                        <time datetime="09:00">9:00</time>
+                        до
+                        <time datetime="22:00">22:00</time>
+                    </p>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Секція footer -->
-    <footer>
+    <!-- Розділ footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <p class="footer__uppertitle">&#169; Copyright 2022</p>
 
-        <p>&#169; Copyright 2020</p>
-
-        <ul class="list">
-            <li class="link-contact">
-                <a href="" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </li>
-            <li class="link-contact">
-                <a href="" target="_blank" rel="noopener noreferrer">Youtube</a>
-            </li>
-        </ul>
+            <!-- Соціальні мережі -->
+            <ul class="social-links-list list">
+                <li class="social-links-list__link">
+                    <a class="social-links-list__link link" href="" target="_blank"
+                        rel="noopener noreferrer">Instagram</a>
+                </li>
+                <li class="social-links-list__link ">
+                    <a class="social-links-list__link link" href="" target=" _blank"
+                        rel="noopener noreferrer">Youtube</a>
+                </li>
+            </ul>
+        </div>
     </footer>
 
     <!-- Скрипти -->

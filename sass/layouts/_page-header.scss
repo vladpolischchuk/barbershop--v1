@@ -6,6 +6,10 @@
 
    width: 100%;
 
+   transition:  background-color $anim-slow,
+                backdrop-filter $anim-slow,
+                box-shadow $anim-slow;
+
    &.js-no-transparency {
         background-color: rgba(16, 18, 27, 0.4);
         backdrop-filter: blur(10px);
@@ -16,6 +20,20 @@
 .page-header__container {
     display: flex;
     align-items: center;
+}
+
+// Логотип
+.logo {
+    fill: getColor('title');
+
+    transition: fill $anim-slow;
+}
+
+// Логотип на темному фоні
+.page-header.js-no-transparency {
+    .logo {
+        fill: getColor('white');
+    }
 }
 
 
@@ -44,6 +62,8 @@
 
     color: getColor('white');
 
+    transition: color $animation;
+
     // ховер та фокус
     &:hover,
     &:focus {
@@ -63,7 +83,7 @@
     margin-left: auto;
 }
 
-.header__phone {
+.phone-link {
     display: block;
     padding-top: 52px;
     padding-bottom: 52px;
@@ -77,6 +97,8 @@
     text-transform: uppercase;
 
     color: getColor('white');
+
+    transition: color $animation;
 
     // ховер та фокус
     &:hover,
