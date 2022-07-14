@@ -4,7 +4,6 @@
     margin-right: auto;
 
     max-width: 1280px;
-    min-height: 644px;
 
     background-color: getColor('main-bg-cl');
 
@@ -72,19 +71,13 @@
 
 }
 
-// Форма запису на послугу
-.contac__left-side {
-    flex-basis: 50%;
+.contact__title {
+    margin-bottom: 40px;
 }
-
 
 // Контакти сайту
 .contact__right-side {
     flex-basis: 470px;
-}
-
-.contact__title {
-    margin-bottom: 40px;
 }
 
 .contact__links {
@@ -131,4 +124,9 @@
 
 .contact__uppertitle {
     color: getColor('white');
+}
+
+.contact__time {
+    margin-top: 0;
+    margin-bottom: 0;
 }

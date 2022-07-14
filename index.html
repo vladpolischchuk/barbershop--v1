@@ -61,7 +61,7 @@
             <!-- Замовити стрижку -->
             <div class="page-header__group">
                 <a class="phone-link link" href="tel:+380441111111">+38 044 111 11 11</a>
-                <button class="btn btn--dark-mode" type="button">онлайн-запись</button>
+                <button class="btn btn--dark-mode" type="button" data-modal-open>онлайн-запись</button>
             </div>
         </div>
     </header>
@@ -747,11 +747,57 @@
         <section class="section contact" id="contact">
 
             <div class="container contact__container">
+
                 <!-- Форма запису на послугу -->
                 <div class="contact__left-side">
                     <h2 class="title contact__title">Онлайн-запись</h2>
-                    <form>
-                        <button type="button"></button>
+
+                    <form class="form">
+
+                        <!-- Дані замовника -->
+                        <div class="form__wrapper">
+                            <label class="form__group">
+                                <input class="form__input placeholder" type="text" name="user-name"
+                                    placeholder="Jon Snow" minlength="3" required>
+
+                                <!-- Підпис -->
+                                <span class="form__label">Ім'я<span class="decor"> *</span></span>
+
+                                <!-- Підказки -->
+                                <span class="form__txt-error txt-error">Минимальния длинна 3 символа</span>
+                                <svg class="form__icons-error" width="15" height="15">
+                                    <use class="icon-attention" href="./img/sprits/sprit.svg#icon-attention">
+                                    </use>
+                                    <use class="icon-success" href="./img/sprits/sprit.svg#icon-success"></use>
+                                </svg>
+                            </label>
+
+                            <label class="form__group">
+                                <input class="form__input placeholder" type="phone" name="user-phone"
+                                    placeholder="+38 (099) 123-45-67" required>
+
+                                <!-- Підпис -->
+                                <span class="form__label">Телефон<span class="decor"> *</span></span>
+
+                                <!-- Підказки -->
+                                <span class="form__txt-error txt-error">Введите телефон в указанном формате</span>
+                                <svg class="form__icons-error" width="15" height="15">
+                                    <use class="icon-attention" href="./img/sprits/sprit.svg#icon-attention">
+                                    </use>
+                                    <use class="icon-success" href="./img/sprits/sprit.svg#icon-success"></use>
+                                </svg>
+                            </label>
+                        </div>
+
+                        <!-- Повідомлення -->
+                        <label class="form__message-group">
+
+                            <textarea class="form__message placeholder" name="user-messag" rows="5"
+                                placeholder="Введите сообщение"></textarea>
+                            <span class="form__message-label">Сообщение</span>
+                        </label>
+
+                        <button class="btn btn--dark-mode" type="button">отправить</button>
                     </form>
                 </div>
 
@@ -820,8 +866,121 @@
         </div>
     </footer>
 
+    <!-- Backdrop та модальне вікно -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+
+            <!-- Вихід з модального вікна -->
+            <div class="modal__wrapper-btn">
+                <button class="modal__btn-exit" data-modal-close type="button">
+                    <svg class="modal__icon-exit" width="11" height="11">
+                        <use href="./img/sprits/sprit.svg#icon-exit"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Форма замовлення послуги -->
+            <form class="md-form">
+                <strong class="md-form__title">Оставьте заявку на стрижку</strong>
+
+                <!-- Дані замовника -->
+                <label class="md-form__label">
+                    <!-- Інпут -->
+                    <span>Ім'я<span class="decor"> *</span></span>
+                    <input class="md-form__input" type="text" name="user-name" minlength="3" placeholder=" " required>
+                    <svg class="md-form__icon" width="20" height="20">
+                        <use href="./img/sprits/sprit.svg#icon-man-black"></use>
+                    </svg>
+
+                    <!-- Підказки -->
+                    <span class="md-form__txt-error txt-error">Минимальния длинна 3 символа</span>
+                    <svg class="md-form__icons-error" width="20" height="20">
+                        <use class="icon-attention" href="./img/sprits/sprit.svg#icon-attention">
+                        </use>
+                        <use class="icon-success" href="./img/sprits/sprit.svg#icon-success"></use>
+                    </svg>
+                </label>
+
+                <label class="md-form__label">
+                    <!-- Інпут -->
+                    <span>Телефон<span class="decor"> *</span></span>
+                    <input class="md-form__input" type="phone" name="user-phone" placeholder=" " required>
+                    <svg class="md-form__icon" width="20" height="20">
+                        <use href="./img/sprits/sprit.svg#icon-tel-black"></use>
+                    </svg>
+
+                    <!-- Підказки -->
+                    <span class="md-form__txt-error txt-error">Введите номер телефона в формате +38 099 123 45 67</span>
+                    <svg class="md-form__icons-error" width="20" height="20">
+                        <use class="icon-attention" href="./img/sprits/sprit.svg#icon-attention">
+                        </use>
+                        <use class="icon-success" href="./img/sprits/sprit.svg#icon-success"></use>
+                    </svg>
+                </label>
+
+                <label class="md-form__label">
+                    <!-- Інпут -->
+                    <span>Пошта<span class="decor"> *</span></span>
+                    <input class="md-form__input" type="mail" name="user-mail" placeholder=" " required>
+                    <svg class="md-form__icon" width="20" height="20">
+                        <use href="./img/sprits/sprit.svg#icon-mail-black"></use>
+                    </svg>
+
+                    <!-- Підказки -->
+                    <span class="md-form__txt-error txt-error">Введите почту в формате example@mail.com</span>
+                    <svg class="md-form__icons-error" width="20" height="20">
+                        <use class="icon-attention" href="./img/sprits/sprit.svg#icon-attention">
+                        </use>
+                        <use class="icon-success" href="./img/sprits/sprit.svg#icon-success"></use>
+                    </svg>
+                </label>
+
+                <!-- Блок оплати -->
+                <div class="pay-type md-form__pay-type" role="group" aria-labelledby="pay-type-title">
+                    <strong class="pay-type__title" id="pay-type-title">Виберите форму оплаты</strong>
+
+                    <div class="pay-type__pay-group">
+                        <label class="pay-type__label">
+                            <input class="pay-type__checkbox visually-hidden" type="radio" name="user-pay" checked>
+                            <svg class="pay-icon" width="50" height="50">
+                                <use href="./img/sprits/sprit.svg#icon-ms-card"></use>
+                            </svg>
+                        </label>
+
+                        <label class="pay-type__label">
+                            <input class="pay-type__checkbox visually-hidden" type="radio" name="user-pay">
+                            <svg class="pay-icon" width="50" height="50">
+                                <use href="./img/sprits/sprit.svg#icon-visa"></use>
+                            </svg>
+                        </label>
+                    </div>
+
+                </div>
+
+
+                <!-- Політика приватності(чекбокс) -->
+                <div class="checkbox checkbox-group">
+
+                    <label class="checkbox__label">
+                        <input class="checkbox__input visually-hidden" type="checkbox">
+                        <span class="checkbox__icon"></span>
+                        Погоджуюся з розсилкою і приймаю
+                        <a class="checkbox__link" href="">
+                            Умови договору
+                        </a>
+                    </label>
+
+                    <!-- Кнопка відправки форми -->
+                    <button class="btn btn--light-mode" type="submit">Відправити</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
     <!-- Скрипти -->
     <script src="./js/header-scroll.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 // Utils
 @import './utils/variables';
 @import './utils/mixins';
+@import './utils/visually-hidden';
 
 // Base
 @import './base/reset';
@@ -14,6 +15,7 @@
 @import './components/grid';
 @import './components/team-links';
 @import './components/contact-form';
+@import './components/modal-form';
 
 // Layouts
 @import './layouts/page-header';
@@ -25,3 +27,4 @@
 @import './layouts/portfolio';
 @import './layouts/contact';
 @import './layouts/footer';
+@import './layouts/backdrop';

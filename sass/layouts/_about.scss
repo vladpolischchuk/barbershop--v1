@@ -3,11 +3,6 @@
     display: flex;
 }
 
-// Фото
-.photos__item {
-    @include sizeCards(2);
-}
-
 // Опис
 .about__description-group {
     margin-left: 65px;
