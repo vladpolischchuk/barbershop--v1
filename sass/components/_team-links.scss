@@ -16,10 +16,10 @@
     width: 44px;
     height: 44px;
 
-    border-radius: 50%;
-
     color: getColor('title');
 
+    border-radius: 50%;
+    outline: transparent;
     transition: 
         background-color 0.2s ease-in, 
         color 0.2s ease-in, 
@@ -30,9 +30,7 @@
     &:focus {
         color: getColor('accent');
         background-color: #22283E;
-
         transform: scale(1.1);
-        outline: none;
     }
 }
 
@@ -42,4 +40,5 @@
     max-height: 20px;
 
     fill: currentColor;
+    transition: fill $animation;
 }

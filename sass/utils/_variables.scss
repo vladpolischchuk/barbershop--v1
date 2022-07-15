@@ -15,6 +15,12 @@ $colors: (
     // Фон
     'main-bg-cl': #191C26,
     'light-bg-cl': #F7F7F7,
+    'secondary-bg-cl': rgba(157, 164, 189, 0.4),
+    'form-bg-cl': #22283e,
+
+    // іконки
+    'warnning-cl': #f1b211,
+    'success-cl': #90ee90,
 );
 
 @function getColor($key) {

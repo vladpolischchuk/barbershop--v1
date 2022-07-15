@@ -102,10 +102,12 @@
 .contact__link,
 .contact__time {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 1.66;
     letter-spacing: 0.02em;
 
     color: getColor('secondary');
+
+    transition: color $animation;
 }
 
 .contact__link:hover,
@@ -119,7 +121,8 @@
     width: 24px;
     height: 24px;
 
-   fill: currentColor;
+    fill: currentColor;
+    transition: fill $animation;
 }
 
 .contact__uppertitle {

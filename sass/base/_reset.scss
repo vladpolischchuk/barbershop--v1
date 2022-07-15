@@ -5,6 +5,10 @@
     font-family: $main-font;
 
     color: getColor('primary');
+
+    &.modal-open {
+        overflow: hidden;
+    }
 }
 
 .list {

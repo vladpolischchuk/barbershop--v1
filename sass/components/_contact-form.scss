@@ -12,7 +12,6 @@
 
 .form__group {
     position: relative;
-
     flex-basis: 270px;
 }
 
@@ -30,7 +29,8 @@
 
     outline: transparent;
     border: none;
-    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    border-bottom: 1px solid getColor('secondary-bg-cl');
+
     transition: border-color $animation;
 
     // фокус
@@ -40,12 +40,12 @@
 
         // не валдні дані
         &:invalid:not(:placeholder-shown) {
-                border-color: #f1b211;
-            }
+            border-color: getColor('warnning-cl');
+        }
 
         // валідні дані
         &:valid:not(:placeholder-shown) {
-            border-color: #90ee90;
+            border-color: getColor('success-cl');
         }
     }
 }
@@ -58,7 +58,7 @@
         line-height: 1.36;
         letter-spacing: 0.1em;
 
-        color: rgba(157, 164, 189, 0.4);
+        color: getColor('secondary-bg-cl');
         opacity: 0;
 
         transition: opacity $animation;
@@ -89,9 +89,12 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
 
-    color: rgba(157, 164, 189, 0.4);
+    color: getColor('secondary-bg-cl');
 
-    transition: transform $animation, color $animation;
+    transition:
+        color $animation,
+        transform $animation,
+        transform-origin $animation;
 }
 
 .decor {
@@ -115,7 +118,7 @@
         }
 }
 
-// Іконки валдіності даних
+// Іконки та текст валдіності даних
 .form__txt-error {
     position: absolute;
     left: 0;
@@ -128,20 +131,21 @@
     position: absolute;
     right: 5px;
     top: 50%;
+
     transform: translateY(-50%);
 }
 
 .icon-attention,
 .txt-error {
-    color: #f1b211;
-    fill: #f1b211;
+    color: getColor('warnning-cl');
+    fill: getColor('warnning-cl');
     opacity: 0;
 
     transition: opacity $animation;
 }
 
 .icon-success {
-    fill: #90ee90;
+    fill: getColor('success-cl');
     opacity: 0;
 
     transition: opacity $animation;
@@ -170,15 +174,15 @@
 .form__message {
     width: 96%;
 
-    color: rgb(255, 255, 255);
+    color: getColor('white');
     background-color: transparent;
     
     border: none;
-    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    border-bottom: 1px solid getColor('secondary-bg-cl');
     resize: none;
     outline: transparent;
 
-    transition: border-color 400ms ease 0s;
+    transition: border-color $animation;
 
     // фокус
     &:focus,
@@ -198,4 +202,13 @@
     color: getColor('white');
     transform: translateY(-20px);
     transform-origin: top left;
+}
+
+// ховер
+.form__message-group:hover {
+    & > .form__message,
+    & > .form__message-label {
+        color: getColor('white');
+        border-color: getColor('white');
+    }
 }

@@ -20,8 +20,9 @@
         border-radius: 25px;
         cursor: pointer;
 
-    transition: color $animation,
-                background-color $animation;
+    transition: 
+        color $animation,
+        background-color $animation;
 
     // на темному фоні
     &--dark-mode {
@@ -38,5 +39,11 @@
     &:focus {
         background-color: getColor('accent');
         color: getColor('white');
+        outline: transparent;
+    }
+
+    // анімація (розділ хеадер)
+    &--anim-pulse {
+        animation: animate_pulse 1.5s infinite;
     }
 }

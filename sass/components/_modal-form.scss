@@ -18,7 +18,7 @@
         0 1px 1px rgba(0, 0, 0, 0.14),
         0 1px 3px rgba(0, 0, 0, 0.12);
 
-    transition: transform $animation, scale $animation;
+    transition: transform $animation;
 
     @media screen and (min-width: 481px) {
         top: 50%;
@@ -66,8 +66,10 @@
     &:hover,
     &focus {
         fill: getColor('accent');
-        background-color: #22283e;
+        background-color: getColor('form-bg-cl');
+
         border-color: transparent;
+        outline: transparent;
     }
 }
 
@@ -106,19 +108,19 @@
     padding-bottom: 11px;
     padding-left: 42px;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-
     background-color: transparent;
     color: getColor('title');
 
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    
     transition: border-color $animation ;
 
     // Ховер та фокус
     &:focus,
     &:hover {
         border-color: #22283e;
-        outline: none;
+        outline: transparent;
     }
 }
 
@@ -128,9 +130,9 @@
     bottom: 10px;
     left: 10px;
 
-    fill: #22283e;
+    fill: getColor('form-bg-cl');
 
-    transition: fill $animation ;
+    transition: fill $animation;
 
     // Ховер та фокус
     .md-form__input:hover+&,
@@ -185,8 +187,10 @@
 .pay-icon {
     fill: getColor('primary');
 
+    transition: fill $animation;
+
     &:hover {
-        fill: #22283e;
+        fill: getColor('form-bg-cl');
     }
 }
 
@@ -232,7 +236,8 @@
     border: 2px solid getColor('accent');
     border-radius: 3px;
 
-    transition: border-color $animation ,
+    transition: 
+        border-color $animation ,
         background-color $animation ,
         background-image $animation ;
 
@@ -249,14 +254,14 @@
 .checkbox__link {
     margin-left: 5px;
 
-    color: getColor('accent');
     text-decoration: underline;
 
+    color: getColor('accent');
     transition: color $animation ;
 
     // Ховер та фокус
     &:hover,
     &:focus {
-        color: #22283e;
+        color: getColor('form-bg-cl');
     }
 }

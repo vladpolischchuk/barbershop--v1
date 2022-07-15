@@ -173,6 +173,7 @@
     &:focus {
         color: getColor('accent');
         border-color: getColor('accent');
+        outline: transparent;
     }
 
     // активна кнопка

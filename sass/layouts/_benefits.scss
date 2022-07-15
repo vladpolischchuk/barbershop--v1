@@ -30,7 +30,7 @@
     width: 170px;
     min-height: 133px;
    
-    background-color: #f7f7f7;
+    background-color: getColor('light-bg-cl');
 
     // отступи
     &:nth-child(2n+1) {
@@ -85,5 +85,5 @@
 
 // Права чатстина
 .benefits__right-side {
-    flex-basis: 500px;
+    flex-basis: 475px;
 }
