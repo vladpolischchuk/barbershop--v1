@@ -6,6 +6,7 @@
     padding-bottom: 12px;
 
     min-width: 160px;
+    max-height: 40px;
 
     font-family: inherit;
     font-weight: 600;
@@ -17,8 +18,8 @@
     background-color: transparent;
 
     border: 1px solid getColor('accent');
-        border-radius: 25px;
-        cursor: pointer;
+    border-radius: 25px;
+    cursor: pointer;
 
     transition: 
         color $animation,
@@ -45,5 +46,12 @@
     // анімація (розділ хеадер)
     &--anim-pulse {
         animation: animate_pulse 1.5s infinite;
+    }
+
+    // планшет
+    @media screen and (min-width: 768px) {
+        &--page-header {
+            color: getColor('white');
+        }
     }
 }

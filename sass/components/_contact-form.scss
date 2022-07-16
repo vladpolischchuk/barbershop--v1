@@ -1,18 +1,33 @@
 // Форма для розділу контакти
 .contact__left-side {
     flex-basis: 50%;
+
+    // телефон
+    @media screen and (max-width: 767.5px) {
+        padding-bottom: 84px;
+    }
+
+    // планшет
+    @media screen and (max-width: 1199.5px) {
+        padding-bottom: 100px;
+    }
 }   
 
 .form__wrapper {
     display: flex;
     align-items: center;
-    margin-bottom: 44px;
     gap: 30px;
+
+    // телефон
+    @media screen and (max-width: 767.5px) {
+        flex-wrap: wrap;
+    }
 }
 
 .form__group {
     position: relative;
-    flex-basis: 270px;
+    margin-bottom: 44px;
+    flex-basis: 100%;
 }
 
 .form__input {
@@ -165,7 +180,6 @@
 // Повідомлення
 .form__message-group {
     position: relative;
-    margin-bottom: 44px;
     display: block;
 
     height: 81px;
@@ -210,5 +224,14 @@
     & > .form__message-label {
         color: getColor('white');
         border-color: getColor('white');
+    }
+}
+
+.form__btn-wrapper {
+    margin-top: 64px;
+
+    // телефон
+    @media screen and (max-width: 767.5px) {
+        text-align: center;
     }
 }

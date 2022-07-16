@@ -1,12 +1,16 @@
-// Соціальні мережі (розміщення розділ герой)
+// Соціальні мережі сайту
 .hero__left-side {
-    display: flex;
-    align-items: flex-end;
+    display: none;
 
-    width: 100px;
+    // планшет
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: flex-end;
+
+        width: 100px;
+    }
 }
 
-// Загальні стилі
 .social-links-list {
     display: flex;
     align-items: center;
@@ -26,8 +30,11 @@
 .hero__social-links-list {  
     margin-bottom: 60px;
 
-    transform: translateX(28px) translateY(50px) rotate(-90deg);
     transform-origin: left top;
+    transform: 
+        translateX(28px)
+        translateY(50px) 
+        rotate(-90deg);
 }
 
 .social-links-list__link {
@@ -46,5 +53,10 @@
     &:hover,
     &:focus {
         color: getColor('accent');
+    }
+
+    // телефон
+    @media screen and (max-width: 767.5px) {
+        margin-left: 15px;
     }
 }

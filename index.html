@@ -35,34 +35,59 @@
                 </svg>
             </a>
 
+
             <!-- Навігація по сайту -->
             <nav class="main-nav page-header__main-nav">
-                <ul class="main-nav__list list">
 
-                    <li class="main-nav__item">
-                        <a class="main-nav__link link" href="#about">Про нас</a>
-                    </li>
+                <!-- Гамбургер -->
+                <button class="main-nav__button" type="button" aria-controls="menu-container" aria-expanded="false"
+                    data-menu-button>
+                    <svg width="24" height="19" aria-label="Перемикач мобільного меню">
+                        <use class="icon-cross" href="./img/sprits/sprit.svg#icon-exit"></use>
+                        <use class="icon-menu" href="./img/sprits/sprit.svg#icon-menu"></use>
+                    </svg>
+                </button>
 
-                    <li class="main-nav__item">
-                        <a class="main-nav__link link" href="#price">Послуги та ціни</a>
-                    </li>
+                <!-- Бекдроп -->
+                <div class="main-nav__backdrop" data-menu></div>
 
-                    <li class="main-nav__item">
-                        <a class="main-nav__link link" href="#team">Майстри</a>
-                    </li>
+                <!-- Випливаюче меню -->
+                <div class="main-nav__wrapper" id="menu-container">
 
-                    <li class="main-nav__item">
-                        <a class="main-nav__link link" href="#contact">Контакти</a>
-                    </li>
-                </ul>
+                    <!-- Компоненти меню -->
+                    <ul class="main-nav__list list">
+
+                        <li class="main-nav__item">
+                            <a class="main-nav__link link" href="#about">Про нас</a>
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a class="main-nav__link link" href="#price">Послуги та ціни</a>
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a class="main-nav__link link" href="#team">Майстри</a>
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a class="main-nav__link link" href="#contact">Контакти</a>
+                        </li>
+                    </ul>
+
+                    <!-- Замовити стрижку -->
+                    <div class="main-nav__group">
+                        <a class="phone-link link" href="tel:+380441111111" target="_blank" rel="noreferrer noopener"
+                            aria-label="Номер телефону">+38 044 111 11 11</a>
+                        <button class="btn btn--page-header btn--anim-pulse" type="button"
+                            data-modal-open>онлайн-запис</button>
+                    </div>
+
+
+                </div>
+
             </nav>
 
-            <!-- Замовити стрижку -->
-            <div class="page-header__group">
-                <a class="phone-link link" href="tel:+380441111111" target="_blank" rel="noreferrer noopener"
-                    aria-label="Номер телефону">+38 044 111 11 11</a>
-                <button class="btn btn--dark-mode btn--anim-pulse" type="button" data-modal-open>онлайн-запис</button>
-            </div>
+
         </div>
     </header>
 
@@ -96,7 +121,7 @@
 
                     <h1 class="main-title" lang="en">BarberShop</h1>
 
-                    <p class="subtitle subtitle--dark-mode">
+                    <p class="subtitle subtitle--dark-mode subtitle--hero-mb">
                         Ми експерти у модних чоловічих стрижках.
                         Працюємо швидко, обережно та зі смаком.
                     </p>
@@ -192,10 +217,10 @@
                     <p class="uppertitle uppertitle--light-mode">ПРО НАС</p>
 
                     <!-- Заголовок розділів -->
-                    <h2 class="title title--light-mode">
+                    <h2 class="title title--about-mb title--light-mode">
                         Кращий Барбершоп твого міста
                     </h2>
-                    <p class="subtitle">
+                    <p class="subtitle subtitle--about-mb">
                         Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до нас.
                     </p>
                     <p class="description-txt">
@@ -789,7 +814,7 @@
                             </label>
 
                             <label class="form__group">
-                                <input class="form__input placeholder" type="phone" name="user-phone"
+                                <input class="form__input placeholder" type="text" name="user-phone"
                                     placeholder="+38 (099) 123-45-67" required>
 
                                 <!-- Підпис -->
@@ -813,53 +838,60 @@
                             <span class="form__message-label">Повідомлення</span>
                         </label>
 
-                        <button class="btn btn--dark-mode" type="button">Надіслати</button>
+                        <div class="form__btn-wrapper">
+                            <button class="btn btn--dark-mode" type="button">Надіслати</button>
+                        </div>
                     </form>
                 </div>
 
                 <!-- Контакти сайту -->
                 <div class="contact__right-side">
                     <h2 class="title contact__title title--dark-mode">Контакти</h2>
-                    <address class="contact__links">
-                        <ul class="list">
-                            <li class="contact__item">
-                                <a class="contact__link" href="https://goo.gl/maps/S13B71cPM89bUmLEA" target="_blank"
-                                    rel="noopener noreferrer" aria-label="Адреса сайту">
-                                    <svg class="contact__icon">
-                                        <use href="./img/sprits/sprit.svg#icon-map"></use>
-                                    </svg>
-                                    вул. Василькова,
-                                    7А <br> Київ, 08132
-                                </a>
-                            </li>
-                            <li class="contact__item">
-                                <a class="contact__link" href="tel:+380441111111" target="_blank"
-                                    rel="noopener noreferrer" aria-label="Номер телефону сайту">
-                                    <svg class="contact__icon">
-                                        <use href="./img/sprits/sprit.svg#icon-phone"></use>
-                                    </svg>
-                                    +38 044 111 11 11
-                                </a>
-                            </li>
-                            <li class="contact__item">
-                                <a class="contact__link" href="mailto:barbershop@email.com" target="_blank"
-                                    rel="noopener noreferrer" aria-label="E-mail сайту">
-                                    <svg class="contact__icon">
-                                        <use href="./img/sprits/sprit.svg#icon-mail"></use>
-                                    </svg>
-                                    barbershop@email.com
-                                </a>
-                            </li>
-                        </ul>
-                    </address>
+                    <div class="contact__wrapper">
+                        <address class="contact__links">
+                            <ul class="list">
+                                <li class="contact__item">
+                                    <a class="contact__link" href="https://goo.gl/maps/S13B71cPM89bUmLEA"
+                                        target="_blank" rel="noopener noreferrer" aria-label="Адреса сайту">
+                                        <svg class="contact__icon">
+                                            <use href="./img/sprits/sprit.svg#icon-map"></use>
+                                        </svg>
+                                        вул. Василькова,
+                                        7А Київ, 08132
+                                    </a>
+                                </li>
+                                <li class="contact__item">
+                                    <a class="contact__link" href="tel:+380441111111" target="_blank"
+                                        rel="noopener noreferrer" aria-label="Номер телефону сайту">
+                                        <svg class="contact__icon">
+                                            <use href="./img/sprits/sprit.svg#icon-phone"></use>
+                                        </svg>
+                                        +38 044 111 11 11
+                                    </a>
+                                </li>
+                                <li class="contact__item">
+                                    <a class="contact__link" href="mailto:barbershop@email.com" target="_blank"
+                                        rel="noopener noreferrer" aria-label="E-mail сайту">
+                                        <svg class="contact__icon">
+                                            <use href="./img/sprits/sprit.svg#icon-mail"></use>
+                                        </svg>
+                                        barbershop@email.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </address>
 
-                    <h3 class="uppertitle uppertitle--dark-mode"><span class="contact__uppertitle">час роботи</span>
-                    </h3>
-                    <p class="contact__time">Щодня з
-                        <time datetime="09:00">9:00</time>
-                        до
-                        <time datetime="22:00">22:00</time>
-                    </p>
+                        <div class="contact__group">
+                            <h3 class="uppertitle uppertitle--dark-mode"><span class="contact__uppertitle">час
+                                    роботи</span>
+                            </h3>
+                            <p class="contact__time">Щодня з
+                                <time datetime="09:00">9:00</time>
+                                до
+                                <time datetime="22:00">22:00</time>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -872,11 +904,11 @@
 
             <!-- Соціальні мережі -->
             <ul class="social-links-list list">
-                <li class="social-links-list__link">
+                <li class="social-links-list__item">
                     <a class="social-links-list__link link" href="" target="_blank" rel="noopener noreferrer"
                         aria-label="instagram">Instagram</a>
                 </li>
-                <li class="social-links-list__link ">
+                <li class="social-links-list__item">
                     <a class="social-links-list__link link" href="" target=" _blank" rel="noopener noreferrer"
                         aria-label="youtube">Youtube</a>
                 </li>
@@ -922,7 +954,7 @@
                 <label class="md-form__label">
                     <!-- Інпут -->
                     <span>Телефон<span class="decor"> *</span></span>
-                    <input class="md-form__input" type="phone" name="user-phone" placeholder=" " required>
+                    <input class="md-form__input" type="text" name="user-phone" placeholder=" " required>
                     <svg class="md-form__icon" width="20" height="20">
                         <use href="./img/sprits/sprit.svg#icon-tel-black"></use>
                     </svg>
@@ -939,7 +971,7 @@
                 <label class="md-form__label">
                     <!-- Інпут -->
                     <span>Пошта<span class="decor"> *</span></span>
-                    <input class="md-form__input" type="mail" name="user-mail" placeholder=" " required>
+                    <input class="md-form__input" type="text" name="user-mail" placeholder=" " required>
                     <svg class="md-form__icon" width="20" height="20">
                         <use href="./img/sprits/sprit.svg#icon-mail-black"></use>
                     </svg>
@@ -999,6 +1031,7 @@
     <!-- Скрипти -->
     <script src="./js/header-scroll.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

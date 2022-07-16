@@ -1,6 +1,11 @@
 // Розділ переваги
 .benefits__container {
     display: flex;
+
+    // телефон та паншет
+    @media screen and (max-width: 1199.5px) {
+        flex-direction: column-reverse;
+    }
 }
 
 // Ліва частина
@@ -8,6 +13,11 @@
     display: flex;
     flex-basis: 50%;
     justify-content: center;
+
+    // планшет
+    @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+       justify-content: end;
+    }
 }
 
 .benefits__list {
@@ -85,5 +95,18 @@
 
 // Права чатстина
 .benefits__right-side {
-    flex-basis: 475px;
+    // телефон та планшет
+    @media screen and (max-width: 1199.5px) {
+        margin-bottom: 44px;
+    }
+
+    // планшет
+    @media screen and (min-width: 768px) {
+        width: 475px;
+    }
+
+    // пк
+    @media screen and (min-width: 1200px) {
+       margin-left: 22px;
+    }
 }

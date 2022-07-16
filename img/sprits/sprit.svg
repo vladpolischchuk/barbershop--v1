@@ -88,5 +88,8 @@ d="M470.1 231.3s7.6 37.2 9.3 45H446c3.3-8.9 16-43.5 16-43.5-.2.3 3.3-9.1 5.3-14.
 />
 </symbol>
 
+<symbol id="icon-menu" viewBox="0 0 48 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M0 5.333v-5.333h48v5.333h-48zM0 18.667h48v-5.333h-48v5.333zM0 32h48v-5.333h-48v5.333z"></path>
+</symbol>
 </defs>
 </svg>

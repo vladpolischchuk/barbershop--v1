@@ -4,5 +4,15 @@
 }
 
 .portfolio__item {
-    @include size-Cards(4);
+    @include size-Cards(1);
+
+    // планшет
+    @media screen and (min-width: 768px) {
+        @include size-Cards(2);
+    }
+
+    // пк
+    @media screen and (min-width: 1200px) {
+        @include size-Cards(4);
+    }
 }
