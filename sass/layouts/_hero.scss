@@ -16,18 +16,18 @@
     // фонові зображення
     @media screen and (max-width: 576px) {
         background-image: 
-        url(../../img/hero/mobile/slider3.jpg);
+        url(../img/hero/mobile/slider3.jpg);
     }
 
     @media screen and (min-width: 577px) and (max-width: 1199px) {
         background-image: 
-            url(../../img/hero/tablet/slider3.jpg),
+            url(../img/hero/tablet/slider3.jpg),
             linear-gradient(to right, #fff 25%, #191c26 12%);
     }
 
     @media screen and (min-width: 1200px) {
         background-image:
-            url(../../img/hero/pc/slider3.jpg),
+            url(../img/hero/pc/slider3.jpg),
             linear-gradient(to right, #fff 25%, #191c26 12%);
     }
 
@@ -55,7 +55,7 @@
     (min-resolution: 2dppx) {
         .hero {
             background-image: 
-                url(../../img/hero/mobile/slider3-2x.jpg);
+                url(../img/hero/mobile/slider3-2x.jpg);
         }
     }
 }
@@ -67,7 +67,7 @@
     (min-resolution: 2dppx) {
         .hero {
             background-image: 
-                url(../../img/hero/tablet/slider3-2x.jpg),
+                url(../img/hero/tablet/slider3-2x.jpg),
                 linear-gradient(to right, #fff 25%, #191c26 12%);
         }
     }
@@ -80,7 +80,7 @@
     (min-resolution: 2dppx) {
         .hero {
             background-image: 
-                url(../../img/hero/pc/slider3-2x.jpg),
+                url(../img/hero/pc/slider3-2x.jpg),
                 linear-gradient(to right, #fff 25%, #191c26 12%);
         }
     }

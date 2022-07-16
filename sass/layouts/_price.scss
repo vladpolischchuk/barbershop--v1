@@ -12,15 +12,15 @@
 
     // фонові зображення
     @media screen and (max-width: 576px) {
-        background-image: url(../../img/price/mobile/img.png);
+        background-image: url(../img/price/mobile/img.png);
     }
 
     @media screen and (min-width: 577px) and (max-width: 960px) {
-        background-image: url(../../img/price/tablet/img.png);
+        background-image: url(../img/price/tablet/img.png);
     }
 
     @media screen and (min-width: 961px) {
-        background-image: url(../../img/price/pc/img.png);
+        background-image: url(../img/price/pc/img.png);
     }
     
     // планшет
@@ -41,7 +41,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .price {
-            background-image: url(../../img/price/mobile/img-2x.png);
+            background-image: url(../img/price/mobile/img-2x.png);
         }
     }
 }
@@ -52,7 +52,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .price {
-            background-image: url(../../img/price/tablet/img-2x.png);
+            background-image: url(../img/price/tablet/img-2x.png);
         }
     }
 }
@@ -63,7 +63,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .price {
-            background-image: url(../../img/price/pc/img-2x.png);
+            background-image: url(../img/price/pc/img-2x.png);
         }
     }
 }

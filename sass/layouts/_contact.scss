@@ -12,17 +12,17 @@
     // фонові зображення
     @media screen and (max-width: 576px) {
         background-image:
-            url(../../img/contact/mobile/bg.png);
+            url(../img/contact/mobile/bg.png);
     }
 
     @media screen and (min-width: 577px) and (max-width: 1199.5px) {
         background-image:
-            url(../../img/contact/tablet/bg.png);
+            url(../img/contact/tablet/bg.png);
     }
 
     @media screen and (min-width: 1200px) {
         background-image:
-            url(../../img/contact/pc/bg.png);
+            url(../img/contact/pc/bg.png);
     }
     
     // телефон
@@ -52,7 +52,7 @@
     (min-resolution: 2dppx) {
         .contact {
             background-image:
-                url(../../img/contact/mobile/bg-2x.png);
+                url(../img/contact/mobile/bg-2x.png);
         }
     }
 }
@@ -64,7 +64,7 @@
     (min-resolution: 2dppx) {
         .contact {
             background-image:
-                url(../../img/contact/tablet/bg-2x.png);
+                url(../img/contact/tablet/bg-2x.png);
         }
     }
 }
@@ -76,7 +76,7 @@
     (min-resolution: 2dppx) {
         .contact {
             background-image:
-                url(../../img/contact/pc/bg-2x.png);
+                url(../img/contact/pc/bg-2x.png);
         }
     }
 }

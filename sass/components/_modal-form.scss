@@ -245,7 +245,7 @@
     .checkbox__input:checked+& {
         border-color: getColor('accent');
         background-color: getColor('accent');
-        background-image: url(../../img/sprits/icon-check.svg);
+        background-image: url(../img/sprits/icon-check.svg);
         background-size: contain;
         background-origin: border-box;
     }

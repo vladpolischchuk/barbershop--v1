@@ -1094,7 +1094,7 @@
 .checkbox__input:checked + .checkbox__icon {
   border-color: #FF6C00;
   background-color: #FF6C00;
-  background-image: url(../../img/sprits/icon-check.svg);
+  background-image: url(../img/sprits/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
 }
@@ -1166,19 +1166,19 @@
 }
 @media screen and (max-width: 576px) {
   .hero {
-    background-image: url(../../img/hero/mobile/slider3.jpg);
+    background-image: url(../img/hero/mobile/slider3.jpg);
   }
 }
 @media screen and (min-width: 577px) and (max-width: 1199px) {
   .hero {
-    background-image: url(../../img/hero/tablet/slider3.jpg), -webkit-gradient(linear, left top, right top, color-stop(25%, #fff), color-stop(12%, #191c26));
-    background-image: url(../../img/hero/tablet/slider3.jpg), linear-gradient(to right, #fff 25%, #191c26 12%);
+    background-image: url(../img/hero/tablet/slider3.jpg), -webkit-gradient(linear, left top, right top, color-stop(25%, #fff), color-stop(12%, #191c26));
+    background-image: url(../img/hero/tablet/slider3.jpg), linear-gradient(to right, #fff 25%, #191c26 12%);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(../../img/hero/pc/slider3.jpg), -webkit-gradient(linear, left top, right top, color-stop(25%, #fff), color-stop(12%, #191c26));
-    background-image: url(../../img/hero/pc/slider3.jpg), linear-gradient(to right, #fff 25%, #191c26 12%);
+    background-image: url(../img/hero/pc/slider3.jpg), -webkit-gradient(linear, left top, right top, color-stop(25%, #fff), color-stop(12%, #191c26));
+    background-image: url(../img/hero/pc/slider3.jpg), linear-gradient(to right, #fff 25%, #191c26 12%);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1197,19 +1197,19 @@
 
 @media screen and (max-width: 576px) and (min-device-pixel-ratio: 2), screen and (max-width: 576px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 576px) and (min-resolution: 192dpi), screen and (max-width: 576px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../img/hero/mobile/slider3-2x.jpg);
+    background-image: url(../img/hero/mobile/slider3-2x.jpg);
   }
 }
 @media screen and (min-width: 577px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 577px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 577px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 577px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../img/hero/tablet/slider3-2x.jpg), -webkit-gradient(linear, left top, right top, color-stop(25%, #fff), color-stop(12%, #191c26));
-    background-image: url(../../img/hero/tablet/slider3-2x.jpg), linear-gradient(to right, #fff 25%, #191c26 12%);
+    background-image: url(../img/hero/tablet/slider3-2x.jpg), -webkit-gradient(linear, left top, right top, color-stop(25%, #fff), color-stop(12%, #191c26));
+    background-image: url(../img/hero/tablet/slider3-2x.jpg), linear-gradient(to right, #fff 25%, #191c26 12%);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../img/hero/pc/slider3-2x.jpg), -webkit-gradient(linear, left top, right top, color-stop(25%, #fff), color-stop(12%, #191c26));
-    background-image: url(../../img/hero/pc/slider3-2x.jpg), linear-gradient(to right, #fff 25%, #191c26 12%);
+    background-image: url(../img/hero/pc/slider3-2x.jpg), -webkit-gradient(linear, left top, right top, color-stop(25%, #fff), color-stop(12%, #191c26));
+    background-image: url(../img/hero/pc/slider3-2x.jpg), linear-gradient(to right, #fff 25%, #191c26 12%);
   }
 }
 .hero__container {
@@ -1417,17 +1417,17 @@
 }
 @media screen and (max-width: 576px) {
   .price {
-    background-image: url(../../img/price/mobile/img.png);
+    background-image: url(../img/price/mobile/img.png);
   }
 }
 @media screen and (min-width: 577px) and (max-width: 960px) {
   .price {
-    background-image: url(../../img/price/tablet/img.png);
+    background-image: url(../img/price/tablet/img.png);
   }
 }
 @media screen and (min-width: 961px) {
   .price {
-    background-image: url(../../img/price/pc/img.png);
+    background-image: url(../img/price/pc/img.png);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1443,17 +1443,17 @@
 
 @media screen and (max-width: 576px) and (min-device-pixel-ratio: 2), screen and (max-width: 576px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 576px) and (min-resolution: 192dpi), screen and (max-width: 576px) and (min-resolution: 2dppx) {
   .price {
-    background-image: url(../../img/price/mobile/img-2x.png);
+    background-image: url(../img/price/mobile/img-2x.png);
   }
 }
 @media screen and (min-width: 577px) and (max-width: 960px) and (min-device-pixel-ratio: 2), screen and (min-width: 577px) and (max-width: 960px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 577px) and (max-width: 960px) and (min-resolution: 192dpi), screen and (min-width: 577px) and (max-width: 960px) and (min-resolution: 2dppx) {
   .price {
-    background-image: url(../../img/price/tablet/img-2x.png);
+    background-image: url(../img/price/tablet/img-2x.png);
   }
 }
 @media screen and (min-width: 961px) and (min-device-pixel-ratio: 2), screen and (min-width: 961px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 961px) and (min-resolution: 192dpi), screen and (min-width: 961px) and (min-resolution: 2dppx) {
   .price {
-    background-image: url(../../img/price/pc/img-2x.png);
+    background-image: url(../img/price/pc/img-2x.png);
   }
 }
 .price-list {
@@ -1779,17 +1779,17 @@
 }
 @media screen and (max-width: 576px) {
   .contact {
-    background-image: url(../../img/contact/mobile/bg.png);
+    background-image: url(../img/contact/mobile/bg.png);
   }
 }
 @media screen and (min-width: 577px) and (max-width: 1199.5px) {
   .contact {
-    background-image: url(../../img/contact/tablet/bg.png);
+    background-image: url(../img/contact/tablet/bg.png);
   }
 }
 @media screen and (min-width: 1200px) {
   .contact {
-    background-image: url(../../img/contact/pc/bg.png);
+    background-image: url(../img/contact/pc/bg.png);
   }
 }
 @media screen and (min-width: 480px) {
@@ -1813,17 +1813,17 @@
 
 @media screen and (max-width: 576px) and (min-device-pixel-ratio: 2), screen and (max-width: 576px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 576px) and (min-resolution: 192dpi), screen and (max-width: 576px) and (min-resolution: 2dppx) {
   .contact {
-    background-image: url(../../img/contact/mobile/bg-2x.png);
+    background-image: url(../img/contact/mobile/bg-2x.png);
   }
 }
 @media screen and (min-width: 577px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 577px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 577px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 577px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .contact {
-    background-image: url(../../img/contact/tablet/bg-2x.png);
+    background-image: url(../img/contact/tablet/bg-2x.png);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .contact {
-    background-image: url(../../img/contact/pc/bg-2x.png);
+    background-image: url(../img/contact/pc/bg-2x.png);
   }
 }
 @media screen and (min-width: 1200px) {
