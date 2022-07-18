@@ -15,10 +15,6 @@
 
 // Скидання деяких стилів
 .page-body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-
     margin: 0;
 
     font-family: $main-font;
@@ -26,7 +22,7 @@
     color: getColor('primary');
 
     &.modal-open {
-        overflow: hidden;
+        overflow-y: hidden;
     }
 }
 

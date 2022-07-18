@@ -22,15 +22,12 @@
   }
 }
 .page-body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
   margin: 0;
   font-family: "Open Sans", sans-serif;
   color: #555555;
 }
 .page-body.modal-open {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .list {
