@@ -23,8 +23,11 @@
 .benefits__list {
     display: flex;
     flex-basis: 370px;
-    flex-wrap: wrap;
     justify-content: flex-start;
+}
+
+.benefits__wrapper {
+    margin-top: 30px;
 }
 
 .benefits__item {

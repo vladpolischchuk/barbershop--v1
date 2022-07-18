@@ -1610,11 +1610,13 @@
   display: flex;
   -ms-flex-preferred-size: 370px;
       flex-basis: 370px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.benefits__wrapper {
+  margin-top: 30px;
 }
 
 .benefits__item {
